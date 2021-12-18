@@ -8,7 +8,8 @@ function(add_gtest)
 
     add_executable(
         ${TEST_NAME}
-        "${TEST_NAME}.cpp" "${TEST_SRCS}"
+        ${TEST_NAME}.cpp
+        ${TEST_SRCS}
     )
     target_link_libraries(
         ${TEST_NAME}
