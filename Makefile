@@ -21,3 +21,6 @@ test: build
 
 docs: build/cmake
 	cmake --build build --target doxygen-docs
+
+apply_format:
+	find -f ./include ./src ./examples ./tests -name "*.hpp" -o -name "*.cpp" | xargs clang-format -i
