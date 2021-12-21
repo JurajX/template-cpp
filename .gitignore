@@ -1,8 +1,9 @@
 # Mac OS X - Desktop Services Store
 .DS_Store
 
-# build folder
+# build and docs folder
 build
+docs
 
 # log files
 *.log
