@@ -23,4 +23,7 @@ docs: build/cmake
 	cmake --build build --target doxygen-docs
 
 apply_format:
-	find -f ./include ./src ./examples ./tests -name "*.hpp" -o -name "*.cpp" | xargs clang-format -i
+	find -E . \
+		-type d -regex '\./(build|docs|\.git)' -prune -o \
+		-type f -regex ".*\.(c|cc|cxx|cpp|c\+\+|h|hh|hxx|hpp|h\+\+)" -print | \
+	xargs clang-format -i -style=file
