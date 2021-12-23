@@ -1,7 +1,25 @@
 #include <string>
 #include <string_view>
 
+/**
+ * @brief Brief of a namespace.
+ *
+ * This is more detailed description of the namespace.
+ *
+ */
 namespace my_lib {
+
+/**
+ * @brief This is a brief description.
+ *        Continuation of breaf description.
+ *
+ * This is more detailed description.
+ *
+ * @param param1 Description of the first parameter
+ * @param param2 Description of the second parameter
+ * @return double Description of the return value
+ */
+auto exampleFunction(const int param1, const double param2) -> double;
 
 /**
  * @brief Print a butified message to a console output.
