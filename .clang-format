@@ -135,7 +135,7 @@ IndentExternBlock: Indent                                           # extern    
 IncludeBlocks: Regroup                                              # include             ; reorganise logically
 SortIncludes: CaseSensitive                                         # include             ; sort order
 AlignConsecutiveMacros: Consecutive                                 # macro               ; align
-IndentPPDirectives: BeforeHash                                      # preprocessor        ; indent directives
+IndentPPDirectives: None                                            # preprocessor        ; indent directives
 
 
 # ----- template
