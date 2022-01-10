@@ -21,6 +21,8 @@ if(MAKE_DOCS)
     set(DOXYGEN_GENERATE_TREEVIEW YES)
     set(DOXYGEN_FULL_SIDEBAR NO)
 
+    set(DOXYGEN_ENABLE_PREPROCESSING NO)
+
     doxygen_add_docs(
         doxygen-docs
         include src examples tests
