@@ -1,13 +1,9 @@
-add_executable(
-    example_my_lib "example_my_lib.cpp"
-)
+include(add_exe)
 
-set_target_properties(
-    example_my_lib PROPERTIES
+add_exe(
+    NAME example_my_lib
+    LINK_LIBRARIES my_lib
     CXX_STANDARD 20
-    CXX_EXTENSIONS OFF
-)
-
-target_link_libraries(
-    example_my_lib PUBLIC my_lib
+    CXX_STANDARD_REQUIRED
+    CXX_EXTENSIONS_OFF
 )
