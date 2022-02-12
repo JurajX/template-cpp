@@ -8,6 +8,7 @@ add_library(
     my_lib.cpp
     ${HDRS}
 )
+add_compile_options(my_lib)
 
 set_target_properties(
     my_lib PROPERTIES

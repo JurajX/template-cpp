@@ -13,6 +13,8 @@ project(
     LANGUAGES CXX
 )
 
+include(add_compile_options)
+
 include(doxygen)
 
 add_subdirectory(src)
