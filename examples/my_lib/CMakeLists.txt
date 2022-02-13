@@ -1,5 +1,3 @@
-include(add_exe)
-
 add_exe(
     NAME example_my_lib
     LINK_LIBRARIES my_lib

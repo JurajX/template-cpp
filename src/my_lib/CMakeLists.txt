@@ -16,7 +16,6 @@ set_target_properties(
     CXX_EXTENSIONS OFF
 )
 
-include(fmt)
 target_link_libraries(
     my_lib
     PRIVATE fmt::fmt

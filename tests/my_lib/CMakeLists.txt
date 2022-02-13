@@ -1,5 +1,3 @@
-include(add_exe)
-
 add_exe(
     TEST
     NAME test_my_lib
