@@ -11,7 +11,7 @@ project(
 
 list(APPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_LIST_DIR}/cmake)
 include(BaseRepo)
-initiate(EXPORT_COMPILE_COMMANDS)
+initiate()
 
 add_subdirectory(src)
 add_subdirectory(examples)
