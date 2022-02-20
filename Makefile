@@ -1,4 +1,4 @@
-all:
+all: format
 	make build &&\
 	make docs
 
@@ -28,7 +28,7 @@ build/docs: build/dir
 build/dir:
 	mkdir -p build
 
-full_clean:
+cclean:
 	rm -rf build docs
 
 clean:
@@ -42,7 +42,7 @@ format:
 	xargs clang-format -i -style=file
 
 
-REPO := "https://raw.githubusercontent.com/JurajX/BaseRepo/master"
+REPO := https://raw.githubusercontent.com/JurajX/BaseRepo/master
 
 update: update/Makefile update/clang_format update/gitignore
 

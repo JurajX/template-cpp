@@ -9,7 +9,7 @@ BitFieldColonSpacing: After                                         # bit fields
 
 # ----- brackets
 SpacesInContainerLiterals: false                                    # literals            ; [ 1, 2, 3 ] vs [1, 2, 3]
-AlignAfterOpenBracket: AlwaysBreak                                  # () [] <>            ; align arguments in them
+AlignAfterOpenBracket: AlwaysBreak       # BlockIndent              # () [] <>            ; align arguments in them
 SpacesInAngles: Never                                               # <>                  ; <int> or < int >
 SpacesInSquareBrackets: false                                       # []                  ; a[ 1 ] or a[1]
 SpaceBeforeSquareBrackets: false                                    # []                  ; space before []
@@ -45,7 +45,7 @@ BraceWrapping:                                                      # {}        
 # ----- classes
 AllowShortEnumsOnASingleLine: true                                  # Enums               ; on one line
 BreakInheritanceList: BeforeComma                                   # class               ; break inheritance
-ConstructorInitializerIndentWidth: 2                                # class, ctor         ; indent initialiser and inheritance
+ConstructorInitializerIndentWidth: 4                                # class, ctor         ; indent initialiser and inheritance
 EmptyLineAfterAccessModifier: Never                                 # class               ; \n after access modifier
 EmptyLineBeforeAccessModifier: LogicalBlock                         # class               ; \n before access modifier
 IndentAccessModifiers: false                                        # class               ; indent access modifier, ignores AccessModifierOffset
@@ -78,7 +78,7 @@ IndentGotoLabels: true                                              # go-to     
 
 
 # ----- functions
-AllowAllArgumentsOnNextLine: true                                   # fn()                ; break arg list
+AllowAllArgumentsOnNextLine: false                                  # fn()                ; break arg list
 AllowAllParametersOfDeclarationOnNextLine: false                    # fn()                ; break declaration list
 AllowShortFunctionsOnASingleLine: Inline                            # fn()                ; on one line
 AlwaysBreakAfterReturnType: None  # alt: None, AllDefinitions       # fn()                ; break after return type
@@ -132,7 +132,7 @@ SpaceBeforeAssignmentOperators: true                                # operator  
 
 # ----- preprocessor
 IndentExternBlock: Indent                                           # extern              ; indent block
-IncludeBlocks: Regroup                                              # include             ; reorganise logically
+IncludeBlocks: Preserve                                             # include             ; reorganise logically
 SortIncludes: CaseSensitive                                         # include             ; sort order
 AlignConsecutiveMacros: Consecutive                                 # macro               ; align
 IndentPPDirectives: None                                            # preprocessor        ; indent directives
